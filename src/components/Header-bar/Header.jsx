@@ -18,7 +18,7 @@ export default function Header() {
             </div>
 
             <div className="nav_list">
-              <Link to="/catalog">
+              <Link to="/catalog" className="linkheader1">
                 <button className="menu">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

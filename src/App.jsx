@@ -1,16 +1,12 @@
-import { Route, Routes } from "react-router-dom"
-import Header from "./components/Header-bar/Header"
-import Main from "./components/Main/Main"
-import Like from "./components/Like/Like"
-import AddProduct from "./components/Add/AddProduct"
-import Buy from "./components/Buy/Buy"
-import Catalog from "./components/catalog/Catalog"
-
-
-
+import { Route, Routes } from "react-router-dom";
+import Header from "./components/Header-bar/Header";
+import Main from "./components/Main/Main";
+import Like from "./components/Like/Like";
+import AddProduct from "./components/Add/AddProduct";
+import Buy from "./components/Buy/Buy";
+import Catalog from "./components/catalog/Catalog.jsx";
 
 function App() {
-
   return (
     <>
       <Header />
@@ -19,11 +15,10 @@ function App() {
         <Route path="/like" element={<Like />} />
         <Route path="/add" element={<AddProduct />} />
         <Route path="/buypage" element={<Buy />} />
-        <Route  path="/catalog" element={<Catalog />} />
+        <Route path="/catalog" element={<Catalog />} />
       </Routes>
-      
     </>
-  )
+  );
 }
 
-export default App
+export default App;
