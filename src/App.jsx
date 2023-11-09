@@ -5,8 +5,13 @@ import Like from "./components/Like/Like"
 import AddProduct from "./components/Add/AddProduct"
 import Buy from "./components/Buy/Buy"
 import Catalog from "./components/catalog/Catalog"
+import { uid } from "uid";
 
 
+
+const getLocalStorage = (key) => {
+  return localStorage.getItem(key) ? JSON.parse(localStorage.getItem(key)) : [];
+};
 
 
 function App() {
