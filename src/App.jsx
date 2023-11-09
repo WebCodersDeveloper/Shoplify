@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom"
+import React, { useEffect, useState } from "react";
 import Header from "./components/Header-bar/Header"
 import Main from "./components/Main/Main"
 import Like from "./components/Like/Like"
