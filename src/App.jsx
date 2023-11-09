@@ -10,6 +10,39 @@ import Catalog from "./components/catalog/Catalog"
 
 
 function App() {
+  const id = uid();
+  const img = "https://picsum.photos/300/200";
+
+  const [item, setItem] = useState("");
+  const [price, setPrice] = useState("");
+  const [category, setCategory] = useState(""); 
+  const [product, setProduct] = useState(getLocalStorage("items"));
+
+  const creatProduct = (e) => {
+    e.preventDefault();
+    const newItem = {
+      id: id,
+      image: img,
+      name: item,
+      narx: price,
+      category: category,
+    };
+
+    setProduct([...product, newItem]);
+    setItem("");
+    setPrice("");
+    setCategory("");
+  };
+
+  useEffect(() => {
+    localStorage.setItem("items", JSON.stringify(product));
+  }, [product]);
+
+  const removeItem = (id) => {
+    setProduct(product.filter((item) => item.id !== id));
+  };
+
+
 
   return (
     <>
