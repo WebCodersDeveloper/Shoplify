@@ -17,7 +17,22 @@ function App() {
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/like" element={<Like />} />
-        <Route path="/add" element={<AddProduct />} />
+        <Route
+          path="/add"
+          element={
+            <AddProduct
+              name={item}
+              setName={setItem}
+              price={price}
+              setPrice={setPrice}
+              category={category}
+              setCategory={setCategory} 
+              creatProduct={creatProduct}
+              product={product}
+              removeItem={removeItem}
+            />
+          }
+        />
         <Route path="/buypage" element={<Buy />} />
         <Route  path="/catalog" element={<Catalog />} />
       </Routes>
