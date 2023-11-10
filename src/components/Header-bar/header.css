@@ -67,6 +67,9 @@
     color: #fff;
     font-family: "Rubik", sans-serif;
   }
+  .header nav .nav_main .nav_list a{
+    text-decoration: none;
+  }
   .header nav .nav_main .nav_list .input_search {
     padding-left: 10px;
     width: 344px;

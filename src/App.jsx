@@ -7,6 +7,7 @@ import AddProduct from "./components/Add/AddProduct"
 import Buy from "./components/Buy/Buy"
 import Catalog from "./components/catalog/Catalog"
 import { uid } from "uid";
+import Footer from "./components/Footer/Footer";
 
 
 
@@ -75,7 +76,7 @@ function App() {
         <Route path="/buypage" element={<Buy />} />
         <Route  path="/catalog" element={<Catalog />} />
       </Routes>
-      
+      <Footer />
     </>
   )
 }

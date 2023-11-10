@@ -6,7 +6,7 @@ export default function Catalog() {
   return (
       <>
         <Catalogpart/>
-        <Footer/>
+        {/* <Footer/> */}
       </>
   );
 }
