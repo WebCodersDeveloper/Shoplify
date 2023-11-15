@@ -35,25 +35,23 @@ export default function AddProduct({
                 value={category} 
                 onChange={(e) => setCategory(e.target.value)} 
               >
-                <option value="Категория" selected disabled>
-                  Категория
-                </option>
-                <option value="Молочные продукты">Молочные продукты</option>
-                <option value="napitki">Напитки</option>
-                <option value="xleb">Хлеб</option>
-                <option value="frukti">Фрукты</option>
-                <option value="ovoshi">Овощи</option>
-                <option value="zamorojennie">Замороженные</option>
-                <option value="konditerskie izdeliya">
+                <option value="">Kategoriya</option>
+                <option value="Sutli maxuslotlar">Молочные продукты</option>
+                <option value="Ichimliklar">Напитки</option>
+                <option value="Non mahsulotlari">Хлеб</option>
+                <option value="Mevalar">Фрукты</option>
+                <option value="Sabzavotlar">Овощи</option>
+                <option value="Muzlatilgan mahsulotlar">Замороженные</option>
+                <option value="Qandolat mahsulotlari">
                   Кондитерские изделия
                 </option>
-                <option value="chay,kofe">Чай, Кофе</option>
-                <option value="bakaleya">Бакалея</option>
-                <option value="zdorovoe pitanie">Здоровое питание</option>
-                <option value="zootovari">Зоотовары</option>
-                <option value="detskoe pitanie">Детское питание</option>
-                <option value="myaso, kolbasa">Мясо, Колбаса</option>
-                <option value="neprodovolstvennie tovari">
+                <option value="Choy,Kofe mahsulotlar">Чай, Кофе</option>
+                <option value="Oziq-ovqatlar">Бакалея</option>
+                <option value="Parxez bob mahsulotlar">Здоровое питание</option>
+                <option value="Uy hayvonlar uchun mahsulotlar">Зоотовары</option>
+                <option value="Bolalar ovqati">Детское питание</option>
+                <option value="Go'sht, kolbasa">Мясо, Колбаса</option>
+                <option value="Nooziq-ovqat mahsulotlari">
                   Непродовольственные товары
                 </option>
               </select>

@@ -1,0 +1,63 @@
+.content{
+    border: 1px solid;
+    padding: 30px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 65px;
+    column-gap: 75px;
+    .card{
+        // border: 1px solid red;
+        border-radius: 10px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.255);
+        background: #fbf9f1;
+        .txt{
+            padding: 15px 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            // border: 1px solid;
+            h3{
+                font-size: 26px;
+                font-weight: 500;
+            }
+            p{
+                width: 280px;
+                font-size: 14px;
+                font-weight: 400;
+            }
+            b{
+                color: tomato
+            }
+            h6{
+                color: grey;
+                font-size: 14px;
+                font-weight: 400;
+            }
+            .btn{
+                display: flex;
+                gap: 50px;
+                button{
+                    border-radius: 6px;
+                    width: 100px;
+                    height: 25px;
+                    border: navajowhite;
+                    background: #b8b7b7;
+                    cursor: pointer;
+                    transition: ease-in-out 450ms;
+                }
+                .heart:hover{
+                    color: #fff;
+                    background: red;
+                }
+                .shopping:hover{
+                    color: #fff;
+                    background: rgb(0, 102, 255);
+                }
+            }
+        }
+    }
+}
