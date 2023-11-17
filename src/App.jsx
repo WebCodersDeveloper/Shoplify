@@ -9,24 +9,7 @@ import router from "./components/CB";
 
 
 function App() {
-  const {
-    item,
-    setItem,
-    price,
-    setPrice,
-    category,
-    setCategory,
-    buyer,
-    count,
-    setCount,
-    removeItem,
-    plusCount,
-    single,
-    creatProduct,
-    buyProduct,
-    product,
-        } = useGlobalContext();
-
+  
   return (
     <>
       <Header />

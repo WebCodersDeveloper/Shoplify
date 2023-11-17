@@ -1,6 +1,8 @@
 import React from 'react'
+import { useGlobalContext } from '../../context'
 
-export default function Buy({buyer,count,plusCount}) {
+export default function Buy() {
+  const {buyer,plusCount} =useGlobalContext();
   return (
     <>
       <div className="content">

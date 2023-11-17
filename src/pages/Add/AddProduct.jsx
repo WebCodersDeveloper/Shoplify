@@ -1,17 +1,19 @@
 import React from "react";
 import "../Add/addproduct.scss";
+import { useGlobalContext } from "../../context";
 
-export default function AddProduct({
-  name,
-  setName,
-  price,
-  setPrice,
-  category, 
-  setCategory, 
-  creatProduct,
-  product,
-  removeItem,
-}) {
+export default function AddProduct() {
+  const {
+    name,
+    setName,
+    price,
+    setPrice,
+    category, 
+    setCategory, 
+    creatProduct,
+    product,
+    removeItem,
+  } = useGlobalContext();
   return (
     <>
       <div className="container">

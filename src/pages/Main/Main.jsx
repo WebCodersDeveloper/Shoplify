@@ -1,7 +1,9 @@
 import React from 'react'
 import "./main.scss";
+import { useGlobalContext } from '../../context';
 
-export default function Main({product,buyProduct,single}) {
+export default function Main() {
+  const {product,buyProduct,single} = useGlobalContext();
   return (
     <>
       <div className="content">
