@@ -1,20 +1,22 @@
 import React from "react";
-import { Link } from "react-router-dom";
-// import logo from "../../../public/logo.png";
+import {  NavLink } from "react-router-dom";
+// import logo from "../../../public/logo.png"; 
 import "./header.css"
+
 export default function Header() {
+    
   return (
     <div>
       <header className="header">
         <nav>
           <div className="nav_main">
           <div className="nav_logo">
-              <Link to="/">
+              <NavLink to="/">
                 <a href="#">
                   {/* <img src={logo} alt="logo" /> */}
                   <h2>Северяночка</h2>
                 </a>
-              </Link>
+              </NavLink>
             </div>
 
             {/* <div className="nav_list">
